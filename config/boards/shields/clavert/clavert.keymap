@@ -40,7 +40,7 @@
     &lt PG_DN  &kp END   &kp LEFT  &kp RIGHT &kp LALT  &kp LGUI &lt SPACE           &lt &mo FN &kp RGUI &kp KP_NUM &kp UP    &kp DOWN &kp INS  &kp PSCRN
           >;
 
-//          sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
+//         
         };
 
         mac_layer {
