@@ -75,7 +75,7 @@
     &kp SQT      &kp X     &kp V     &kp L     &kp C     &kp W  &kp HOME                                      &kp ESC   &kp K    &kp H  &kp G     &kp F     &kp Q    &kp EQUAL
     &kp GRAVE    &kp U     &kp I     &kp A     &kp E     &kp O  &kp BSLH                                      &kp BSPC  &kp S    &kp N  &kp R     &kp T     &kp D    &kp MINUS
     &kp PG_UP    &kp Y     &kp LBKT  &kp RBKT  &kp P     &kp Z  &kp LSHFT   &kp LCTRL               &kp ENTER   &kp ENTER &kp B    &kp M  &kp COMMA &kp DOT   &kp J    &kp SEMI
-    &kp PG_DN    &kp END   &kp LEFT  &kp RIGHT     &kp LALT     &kp LALT    &kp SPACE               &kp ENTER   &kp ENTER      &kp ENTER   &kp UB    &kp DOWN  &kp INS  &kp PSCRN
+    &kp PG_DN    &kp END   &kp LEFT  &kp RIGHT     &kp LALT     &kp LALT    &kp SPACE               &kp ENTER   &kp ENTER      &kp ENTER   &kp UP    &kp DOWN  &kp INS  &kp PSCRN
           >;
 
         };
