@@ -27,8 +27,8 @@
         de_AE: de_AE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-           wait-ms = <40>;
-           tap-ms = <40>;
+           wait-ms = <0>;
+           tap-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
             , <&macro_tap     &kp KP_N1 &kp KP_N4 &kp KP_N2>
@@ -38,8 +38,8 @@
         de_UE: de_UE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-           wait-ms = <40>;
-           tap-ms = <40>;
+           wait-ms = <0>;
+           tap-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
             , <&macro_tap     &kp KP_N1 &kp KP_N5 &kp KP_N4>
@@ -49,8 +49,8 @@
         de_OE: de_OE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-           wait-ms = <40>;
-           tap-ms = <40>;
+           wait-ms = <0>;
+           tap-ms = <0>;
         bindings
             = <&macro_press   &kp LALT>
             , <&macro_tap     &kp KP_N1 &kp KP_N5 &kp KP_N3>
@@ -65,36 +65,37 @@
       compatible = "zmk,keymap";
         default_layer {
 // -----------------------------------------------------------------------------------------------------------------------------------------
-// | ESC        | 1     | 2    | 3     | 4     | 5    |                                               | 6   | 7   | 8     | 9    | 0   | QMARK |
+// | ESC        | 1     | 2    | 3     | 4     | 5    |                                               | 6   | 7   | 8     | 9    | 0   | FSLH |
 // | SQT        | X     | V    | L     | C     | W    | HOME  |                            | DEL      | K   | H   | G     | F    | Q   | =     |
 // | GRAVE      | U     | I    | A     | E     | O    | \     |                            | BSPC     | S   | N   | R     | T    | D   | MINUS |
 // | PG_UP      | Y     | [    | ]     | P     | Z    | LSHFT | LCTRL   |         | MOD1   | ENTER    | B   | M   | COMMA | DOT  | J   | SEMI  |
-// | PG_DN      | END   | LEFT | RIGHT |      LALT    | LGUI  | SPACE   |         | MOD2   | MOD3     | NUMLOCK   | UP    | DOWN | INS | PRTSCN|
+// | PG_DN      | END   | LEFT | RIGHT |      LALT    | LGUI  | SPACE   |         | MOD2   | MOD3     | CAPS      | UP    | DOWN | INS | PRTSCN|
           bindings = <
-    &kp ESC      &kp N1    &kp N2    &kp N3    &kp N4    &kp N5                                                         &kp N6   &kp N7 &kp N8    &kp N9    &kp N0   &kp QMARK
-    &kp SQT      &kp X     &kp V     &kp L     &kp C     &kp W  &kp HOME                                      &kp ESC   &kp K    &kp H  &kp G     &kp F     &kp Q    &kp EQUAL
+    &kp ESC      &kp N1    &kp N2    &kp N3    &kp N4    &kp N5                                                         &kp N6   &kp N7 &kp N8    &kp N9    &kp N0   &kp FSLH
+    &kp SQT      &kp X     &kp V     &kp L     &kp C     &kp W  &kp HOME                                      &kp DEL   &kp K    &kp H  &kp G     &kp F     &kp Q    &kp EQUAL
     &kp GRAVE    &kp U     &kp I     &kp A     &kp E     &kp O  &kp BSLH                                      &kp BSPC  &kp S    &kp N  &kp R     &kp T     &kp D    &kp MINUS
-    &kp PG_UP    &kp Y     &kp LBKT  &kp RBKT  &kp P     &kp Z  &kp LSHFT   &kp LCTRL               &mo MAC   &kp ENTER &kp B    &kp M  &kp COMMA &kp DOT   &kp J    &kp SEMI
-    &kp PG_DN    &kp END   &kp LEFT  &kp RIGHT     &kp LALT     &kp LALT    &kp SPACE               &mo NAV   &mo FN      &kp ENTER   &kp UP    &kp DOWN  &kp INS  &kp PSCRN
+    &kp PG_UP    &kp Y     &kp LBKT  &kp RBKT  &kp P     &kp Z  &kp LSHFT   &kp LCTRL               &mo DE   &kp ENTER &kp B    &kp M  &kp COMMA &kp DOT   &kp J    &kp SEMI
+    &kp PG_DN    &kp END   &kp LEFT  &kp RIGHT     &kp LALT     &kp LALT    &kp SPACE               &mo NAV   &mo NUM      &kp CAPS   &kp UP    &kp DOWN  &kp INS  &kp PSCRN
           >;
 
-        };
+ 
+       };
 
-        mac_layer {
+        de_layer {
 // ------------------------------------------------------------------------------------------------------------------------------------
 // | trans | trans | trans | trans | trans | trans |                                  | trans | trans | trans | trans | trans | trans |
 // | trans | trans | trans | trans | trans | trans | trans |                  | trans | trans | trans | trans | trans | trans | trans |
-// | LGUI  | de_UE | trans | de_AE | trans | DE_UE | CAPS  |                  | trans | trans | trans | trans | trans | trans | trans |
-// | trans | trans | trans | trans | trans | trans | trans | trans |  | trans | trans | trans | trans | trans | trans | trans | trans |
+// | LGUI  | de_UE | trans | de_AE | trans | DE_UE | right  |                  | trans | de_sz | trans | trans | trans | trans | trans |
+// | trans | de_ue | trans | de_ae | trans | de_ue | trans | trans |  | trans | trans | trans | trans | trans | trans | trans | trans |
 // | trans | trans | trans | LCTRL | trans         | trans | trans |  | trans | trans | trans         | trans | trans | trans | trans |
           bindings = <
     &trans   &trans &trans &trans    &trans &trans                                  &trans &trans &trans &trans &trans &trans
     &trans   &trans &trans &trans    &trans &trans &trans                    &trans &trans &trans &trans &trans &trans &trans
-    &kp LGUI &de_UE &trans &de_AE    &trans &de_OE &kp CAPS                  &trans &trans &trans &trans &trans &trans &trans
+    &kp LGUI &de_UE &trans &de_AE    &trans &de_OE &kp RIGHT                  &trans &trans &trans &trans &trans &trans &trans
     &trans   &trans &trans &trans    &trans &trans &trans   &trans    &trans &trans &trans &trans &trans &trans &trans &trans
     &trans   &trans &trans &kp LCTRL &trans        &trans   &trans    &trans &trans &trans        &trans &trans &trans &trans
           >;
-
+ 
           bindings = <&de_AE>;
                     bindings = <&de_OE>;
                               bindings = <&de_UE>;
@@ -115,7 +116,7 @@
     &trans &trans &trans &trans &trans        &trans   &trans    &trans   &trans    &trans         &none    &none     &trans &trans
           >;
 
-          sensor-bindings = <&inc_dec_kp UP DOWN>;
+        
         };
 
         num_layer {
