@@ -74,7 +74,7 @@
     &kp ESC      &kp N1    &kp N2    &kp N3    &kp N4    &kp N5                                                         &kp N6   &kp N7 &kp N8    &kp N9    &kp N0   &kp FSLH
     &kp SQT      &kp X     &kp V     &kp L     &kp C     &kp W  &kp HOME                                      &kp DEL   &kp K    &kp H  &kp G     &kp F     &kp Q    &kp EQUAL
     &kp GRAVE    &kp U     &kp I     &kp A     &kp E     &kp O  &kp BSLH                                      &kp BSPC  &kp S    &kp N  &kp R     &kp T     &kp D    &kp MINUS
-    &kp PG_UP    &kp Y     &kp LBKT  &kp RBKT  &kp P     &kp Z  &kp LSHFT   &kp LCTRL               &mo ENTER    &kp ENTER &kp B    &kp M  &kp COMMA &kp DOT   &kp J    &kp SEMI
+    &kp PG_UP    &kp Y     &kp LBKT  &kp RBKT  &kp P     &kp Z  &kp LSHFT   &kp LCTRL               &mo DE    &kp ENTER &kp B    &kp M  &kp COMMA &kp DOT   &kp J    &kp SEMI
     &kp PG_DN    &kp END   &kp LEFT  &kp RIGHT     &kp LALT     &kp LGUI    &kp SPACE               &mo NAV   &mo NUM      &kp TAB   &kp UP    &kp DOWN  &kp INS  &kp PSCRN
           >;
 
