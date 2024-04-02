@@ -46,7 +46,7 @@
             , <&macro_release &kp LALT>
           ;
         };
-        de__oe_shifted: de_oe_shifted {
+        de_oe_shifted: de_oe_shifted {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
            wait-ms = <0>;
@@ -95,10 +95,6 @@
     &trans   &trans &trans &trans    &trans &trans &trans   &trans    &trans &trans &trans &trans &trans &trans &trans &trans
     &trans   &trans &trans &kp LCTRL &trans        &trans   &trans    &trans &trans &trans        &trans &trans &trans &trans
           >;
- 
-          bindings = <&de_ae_shifted>,
-                     <&de_oe_shifted>,
-                      <&de_ue_shifted>;
         };
 
         nav_layer {
