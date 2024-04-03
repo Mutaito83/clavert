@@ -56,6 +56,38 @@
             , <&macro_tap     &kp KP_N1 &kp KP_N5 &kp KP_N3>
             , <&macro_release &kp LALT>
           ;
+        };de_ae_unshifted: de_ae_unshifted {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+           wait-ms = <0>;
+           tap-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N3 &kp KP_N2>
+            , <&macro_release &kp LALT>
+          ;
+        };
+        de_ue_unshifted: de_ue_unshifted {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+           wait-ms = <0>;
+           tap-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N2 &kp KP_N9>
+            , <&macro_release &kp LALT>
+          ;
+        };
+        de_oe_unshifted: de_oe_unshifted {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+           wait-ms = <0>;
+           tap-ms = <0>;
+        bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N4 &kp KP_N8>
+            , <&macro_release &kp LALT>
+          ;
         };
     };
 };
@@ -89,11 +121,11 @@
 // | trans | de_ue | trans | de_ae | trans | de_oe | trans | trans |  | trans | trans | trans | trans | trans | trans | trans | trans |
 // | trans | trans | trans | LCTRL | trans         | trans | trans |  | trans | trans | trans         | trans | trans | trans | trans |
           bindings = <
-    &trans   &trans &trans &trans    &trans &trans                                  &trans &trans &trans &trans &trans &trans
-    &trans   &trans &trans &trans    &trans &trans &trans                    &trans &trans &trans &trans &trans &trans &trans
-    &kp LGUI &de_ue_shifted &trans &de_ae_shifted    &trans &de_oe_shifted &kp RIGHT                  &trans &trans &trans &trans &trans &trans &trans
-    &trans   &trans &trans &trans    &trans &trans &trans   &trans    &trans &trans &trans &trans &trans &trans &trans &trans
-    &trans   &trans &trans &kp LCTRL &trans        &trans   &trans    &trans &trans &trans        &trans &trans &trans &trans
+    &trans   &trans &trans    &trans    &trans &trans                                  &trans &trans &trans &trans &trans &trans
+    &trans   &trans &trans    &trans    &trans &trans &trans                    &trans &trans &trans &trans &trans &trans &trans
+    &kp LGUI &de_ue_unshifted   &trans &de_ae_unshifted    &trans &de_oe_unshifted &kp RIGHT                  &trans &trans &trans &trans &trans &trans &trans
+    &trans   &de_ue_shifted &trans &de_ae_shifted  &trans &de_oe_shifted   &trans   &trans    &trans &trans &trans &trans &trans &trans &trans &trans
+    &trans   &trans           &trans &kp LCTRL &trans        &trans   &trans    &trans &trans &trans        &trans &trans &trans &trans
           >;
         };
 
